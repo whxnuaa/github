@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.bobo.entity">
+
+	<class name="Users" table="users">
+		<id name="id" type="java.lang.Integer">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="name" type="java.lang.String"/>
+		<property name="password" column="password" type="java.lang.String"/>
+	</class>
+
+</hibernate-mapping>
