@@ -1,0 +1,65 @@
+server:
+  port: 8431
+spring:
+# 数据库连接
+  datasource:
+#    url: jdbc:mysql://192.168.100.4:3306/example?useUnicode=true&characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://223.2.197.246:3306/example?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: root
+    password: nsi-xu811
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+# redis配置
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    pool:
+      max-active: 50
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+      # 超时 毫秒
+    timeout: 6000
+    database: 0
+# mybatis配置
+mybatis:
+  mapper-locations: classpath:mybatis/*mapper.xml
+  type-aliases-package: com.jit.skiad.domain
+# mybatis-plus 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-column-underline: true
+    id-type: 0
+    capital-mode: true
+# 分页插件
+pagehelper:
+  reasonable: false
+  support-methods-arguments: true
+  params: count=countSql
+  row-bounds-with-count: true
+  helper-dialect: mysql
+# 日志
+logging:
+  level:
+    com.jit.skiad: debug
+  config: classpath:logback-spring.xml
+# JWT 配置
+jwt:
+  config:
+      # 过期时长 单位毫秒
+    expiry: 60000000
+      # 签发者
+    issuer: jit
+      # 私钥
+    base64Security: jit_base64Security
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+      register: auth/signup

@@ -1,0 +1,27 @@
+2018-11-28 09:07:03.238 DEBUG 274880 --- [main] com.jit.skiad.SkiadApplication           : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-11-28 09:07:06.541 DEBUG 274880 --- [localhost-startStop-1] c.j.s.j.filter.JwtAuthenticationFilter   : Initializing filter 'jwtAuthenticationFilter'
+2018-11-28 09:07:06.541 DEBUG 274880 --- [localhost-startStop-1] c.j.s.j.filter.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured successfully
+2018-11-28 09:07:34.256 DEBUG 274880 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==>  Preparing: SELECT ID AS id,username,`password`,real_name AS realName,image,register_time AS registerTime,last_password_reset_date AS lastPasswordResetDate FROM user WHERE username=? 
+2018-11-28 09:07:34.280 DEBUG 274880 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==> Parameters: zhangsan(String)
+2018-11-28 09:07:34.319 DEBUG 274880 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : <==      Total: 1
+2018-11-28 09:07:34.332 DEBUG 274880 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==>  Preparing: SELECT ID AS id,username,`password`,real_name AS realName,image,register_time AS registerTime,last_password_reset_date AS lastPasswordResetDate FROM user WHERE username=? 
+2018-11-28 09:07:34.337 DEBUG 274880 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==> Parameters: zhangsan(String)
+2018-11-28 09:07:34.341 DEBUG 274880 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : <==      Total: 1
+2018-11-28 09:07:34.343 DEBUG 274880 --- [http-nio-8080-exec-2] c.j.s.mapper.RoleMapper.getRoleByUserId  : ==>  Preparing: select r.* from role r where r.id = ( select role_id from user_role where user_id = ?) 
+2018-11-28 09:07:34.346 DEBUG 274880 --- [http-nio-8080-exec-2] c.j.s.mapper.RoleMapper.getRoleByUserId  : ==> Parameters: 1(Integer)
+2018-11-28 09:07:34.350 DEBUG 274880 --- [http-nio-8080-exec-2] c.j.s.mapper.RoleMapper.getRoleByUserId  : <==      Total: 1
+2018-11-28 09:11:16.782 DEBUG 186132 --- [main] com.jit.skiad.SkiadApplication           : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-11-28 09:11:19.977 DEBUG 186132 --- [localhost-startStop-1] c.j.s.j.filter.JwtAuthenticationFilter   : Initializing filter 'jwtAuthenticationFilter'
+2018-11-28 09:11:19.977 DEBUG 186132 --- [localhost-startStop-1] c.j.s.j.filter.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured successfully
+2018-11-28 09:11:59.211 DEBUG 282444 --- [main] com.jit.skiad.SkiadApplication           : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-11-28 09:12:02.533 DEBUG 282444 --- [localhost-startStop-1] c.j.s.j.filter.JwtAuthenticationFilter   : Initializing filter 'jwtAuthenticationFilter'
+2018-11-28 09:12:02.533 DEBUG 282444 --- [localhost-startStop-1] c.j.s.j.filter.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured successfully
+2018-11-28 09:12:38.698 DEBUG 282444 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==>  Preparing: SELECT ID AS id,username,`password`,real_name AS realName,image,register_time AS registerTime,last_password_reset_date AS lastPasswordResetDate FROM user WHERE username=? 
+2018-11-28 09:12:38.718 DEBUG 282444 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==> Parameters: zhangsan(String)
+2018-11-28 09:12:38.749 DEBUG 282444 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : <==      Total: 1
+2018-11-28 09:12:38.755 DEBUG 282444 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==>  Preparing: SELECT ID AS id,username,`password`,real_name AS realName,image,register_time AS registerTime,last_password_reset_date AS lastPasswordResetDate FROM user WHERE username=? 
+2018-11-28 09:12:38.758 DEBUG 282444 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : ==> Parameters: zhangsan(String)
+2018-11-28 09:12:38.761 DEBUG 282444 --- [http-nio-8080-exec-2] c.jit.skiad.mapper.UserMapper.selectOne  : <==      Total: 1
+2018-11-28 09:12:38.762 DEBUG 282444 --- [http-nio-8080-exec-2] c.j.s.mapper.RoleMapper.getRoleByUserId  : ==>  Preparing: select r.* from role r where r.id = ( select role_id from user_role where user_id = ?) 
+2018-11-28 09:12:38.764 DEBUG 282444 --- [http-nio-8080-exec-2] c.j.s.mapper.RoleMapper.getRoleByUserId  : ==> Parameters: 1(Integer)
+2018-11-28 09:12:38.768 DEBUG 282444 --- [http-nio-8080-exec-2] c.j.s.mapper.RoleMapper.getRoleByUserId  : <==      Total: 1

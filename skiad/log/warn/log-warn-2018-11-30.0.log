@@ -1,0 +1,1 @@
+2018-11-30 09:19:21.359  WARN 21356 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.jit.skiad.RedisTest com.jit.skiad.SkiadApplication.rt
